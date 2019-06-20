@@ -1,21 +1,41 @@
 import React from 'react';
-import { connect } from 'dva';
-import styles from './IndexPage.css';
+import { Drawer, Button } from 'antd';
 
-function IndexPage() {
-  return (
-    <div className={styles.normal}>
-      <h1 className={styles.title}>Yay! Welcome to dva!</h1>
-      <div className={styles.welcome} />
-      <ul className={styles.list}>
-        <li>To get started, edit <code>src/index.js</code> and save to reload.</li>
-        <li><a href="https://github.com/dvajs/dva-docs/blob/master/v1/en-us/getting-started.md">Getting Started</a></li>
-      </ul>
-    </div>
-  );
+export default class Content extends React.Component {
+  state = { visible: false };
+
+  showDrawer = () => {
+    this.setState({
+      visible: true,
+    });
+  };
+
+  onClose = () => {
+    this.setState({
+      visible: false,
+    });
+  };
+
+  render() {
+    return (
+      <div>
+        <Button type="primary" onClick={this.showDrawer}>
+          课程解说
+        </Button>
+        <Drawer
+          title="Practical Deep Learning for Coders"
+          placement="right"
+          width='700'
+          mask={false}
+          closable={true}
+          onClose={this.onClose}
+          visible={this.state.visible}
+        >
+        <h1>{this.props.LessonTitle}</h1>
+       {this.props.massContent}
+        </Drawer>
+    
+      </div>
+    );
+  }
 }
-
-IndexPage.propTypes = {
-};
-
-export default connect()(IndexPage);

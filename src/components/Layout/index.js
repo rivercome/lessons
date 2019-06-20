@@ -1,5 +1,6 @@
 import React from 'react'
 import { Layout, Menu, Icon } from 'antd';
+import { Link } from 'dva/router';
 
 const { Header, Sider, Content } = Layout;
 
@@ -21,26 +22,52 @@ export default class SiderDemo extends React.Component {
           <div className="logo" />
           <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
             <Menu.Item key="1">
+            <Link to='/lesson1'>
             <Icon type="align-left" />
-              <span>nav 1</span>
+              <span>lesson 1</span>
+              </Link>
             </Menu.Item>
+
             <Menu.Item key="2">
+            <Link to='/lesson2'>
             <Icon type="align-left" />
-              <span>nav 2</span>
+              <span>lesson 2</span>
+              </Link>
             </Menu.Item>
             <Menu.Item key="3">
+            <Link to='/lesson3'>
             <Icon type="align-left" />
-              <span>nav 3</span>
+              <span>lesson 3</span>
+              </Link>
+            </Menu.Item>
+            <Menu.Item key="4">
+            <Link to='/lesson4'>
+            <Icon type="align-left" />
+              <span>lesson 4</span>
+              </Link>
+            </Menu.Item>
+            <Menu.Item key="5">
+            <Link to='/lesson5'>
+            <Icon type="align-left" />
+              <span>lesson 5</span>
+              </Link>
+            </Menu.Item>
+            <Menu.Item key="6">
+            <Link to='/lesson6'>
+            <Icon type="align-left" />
+              <span>lesson 6</span>
+              </Link>
             </Menu.Item>
           </Menu>
         </Sider>
         <Layout>
-          <Header style={{ background: '#fff', padding: 0 }}>
+          <Header style={{ background: '#fff', padding: 3 }}>
             <Icon
               className="trigger"
               type={this.state.collapsed ? 'menu-unfold' : 'menu-fold'}
               onClick={this.toggle}
             />
+            <span style={{fontSize: '25px', paddingLeft: '23px'}}>Practical Deep Learning for Coders</span>
           </Header>
           <Content
             style={{
