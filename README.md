@@ -1,5 +1,5 @@
 # lessons
-static site
+仿写 https://course.fast.ai/videos/?lesson=1
 
 ## 框架
 + dva
@@ -14,5 +14,5 @@ static site
 ## 文件结构
 
 + Layout置于components文件夹下
-+ 每一个课程文字说明，单独一个文件在routers下，基于抽贴组件（IndexPage.js）
++ 每一个课程文字说明，单独一个文件在routers下，基于抽屉组件（IndexPage.js）
 + 视频播放器引用video.js 在componentDidMount周期中调用，设置视频开始时间
