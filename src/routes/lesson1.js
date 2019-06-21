@@ -4,6 +4,21 @@ import VideoPlayer from '../components/video'
 import 'video.js/dist/video-js.css'
 
 export default class Lesson2 extends Component {
+
+
+    componentDidMount(){
+            var videoObj = document.querySelector('video')
+            console.log('1111', videoObj.currentTime)
+            videoObj.currentTime = 24
+            // videoObj.addEventListener('canplay',function(){
+            //     var totalT = this.duration
+            //     var presentT = this.currentTime
+            //     // var videoDuration = formatTime(totalT)
+            //     console.log('222', totalT, presentT)
+            //     // durationTimer.innerHTML = videoDuration
+            // })
+    }
+
     render(){
         const videoJsOptions = {
             autoplay: false,
@@ -11,7 +26,6 @@ export default class Lesson2 extends Component {
             sources: [{
               src: 'http://www.somefor.cn/C3D%E5%8E%9F%E7%90%86.mp4',
               type: 'video/mp4',
-              timeupdate: 10  
             }]
           }
         const something = (

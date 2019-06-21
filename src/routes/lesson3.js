@@ -1,9 +1,24 @@
 import React, { Component, Fragment } from 'react';
 
 import Content from './IndexPage'
-
+import VideoPlayer from '../components/video'
+import 'video.js/dist/video-js.css'
 export default class Lesson2 extends Component {
+    componentDidMount(){
+        var videoObj = document.querySelector('video')
+        console.log('1111', videoObj.currentTime)
+        videoObj.currentTime = 92
+    }
+
     render(){
+        const videoJsOptions = {
+            autoplay: false,
+            controls: true,
+            sources: [{
+              src: 'http://www.somefor.cn/C3D%E5%8E%9F%E7%90%86.mp4',
+              type: 'video/mp4',
+            }]
+          }
         const something = (
             <div>
                 <h2>Overview</h2>
@@ -36,6 +51,10 @@ export default class Lesson2 extends Component {
                    LessonTitle="Lesson 3: Data blocks; Multi-label classification; Segmentation"
                    massContent={something}
                 />
+
+
+            <div style={{height: '50px'}} />>
+            <VideoPlayer { ...videoJsOptions } />
             </Fragment>
         )
     }

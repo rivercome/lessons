@@ -14,8 +14,8 @@ export default {
         ["import",
         { libraryName: "antd", style: true }],
       ],
-      publicPath: 'http://qhdjl.cdn.neuqzxy.cn/fe/'
+      publicPath: 'http://www.somefor.cn/fe/'
     }
   },
-  publicPath: '/'
+  publicPath: 'http://www.somefor.cn/fe/'
 }
