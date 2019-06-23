@@ -1,21 +1,7 @@
 export default {
   'entry': 'src/index.js',
   'disableCSSModules': true,
-  'hash': true,
-  'env': {
-    'development': {
-      'extraBabelPlugins': [
-        ["import",
-        { libraryName: "antd", style: true }],
-      ]
-    },
-    'production': {
-      'extraBabelPlugins': [
-        ["import",
-        { libraryName: "antd", style: true }],
+   "extraBabelPlugins": [
+        ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": "css" }]
       ],
-      publicPath: 'http://www.somefor.cn/fe/'
-    }
-  },
-  publicPath: 'http://www.somefor.cn/fe/'
 }

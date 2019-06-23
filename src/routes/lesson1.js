@@ -23,6 +23,7 @@ export default class Lesson2 extends Component {
         const videoJsOptions = {
             autoplay: false,
             controls: true,
+            width: '900px',
             sources: [{
               src: 'http://www.somefor.cn/C3D%E5%8E%9F%E7%90%86.mp4',
               type: 'video/mp4',
@@ -44,16 +45,18 @@ export default class Lesson2 extends Component {
 
             <h2>Links</h2>
             <h3>Lesson resources</h3>
-            <p>Course site, including setup guides for each platform
-            Course repo
-                fastai docs
-                fastai datasets
-                Notebooks:
-                00_notebook_tutorial.ipynb
-                lesson1-pets.ipynb
-                Detailed lesson notes - thanks to @hiromi
-                Lesson notes - thanks to @PoonamV (wiki thread - please help contribute!)
-                Lesson discussion thread</p>
+            <p>
+               <a href="https://course.fast.ai/"> <li> Course site, including setup guides for each platform</li></a>
+                <a href="https://github.com/fastai/course-v3"><li>Course repo</li></a>
+               <a href="https://docs.fast.ai/"><li>fastai docs</li></a>
+                <a href="https://course.fast.ai/datasets"><li>fastai datasets</li></a>
+                <li>Notebook:</li>
+                <a href="https://nbviewer.jupyter.org/github/fastai/course-v3/blob/master/nbs/dl1/00_notebook_tutorial.ipynb"><li>00_notebook_tutorial.ipynb</li></a>
+
+                <a href="https://github.com/fastai/course-v3/blob/master/nbs/dl1/lesson1-pets.ipynb"><li>lesson1-pets.ipynb</li></a>
+                <li> <a href="https://github.com/hiromis/notes/blob/master/Lesson1.md">Detailed lesson notes</a> - thanks to @hiromi</li>
+                <li> <a href="https://forums.fast.ai/t/lesson-1-discussion/27332"> Lesson notes - thanks to @PoonamV (wiki thread - please help contribute!)</a>
+                Lesson discussion thread</li></p>
                 <h3>Other resources</h3>
                 <li>Thread on creating your own image dataset
                 What you need to do deep learning (fast.ai blog post including some basics on what GPUs are and why they're needed)

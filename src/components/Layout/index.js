@@ -22,40 +22,40 @@ export default class SiderDemo extends React.Component {
           <div className="logo" />
           <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
             <Menu.Item key="1">
-            <Link to='/lesson1'>
+            <Link to='/'>
             <Icon type="align-left" />
-              <span>lesson 1</span>
+              <span>知识点 1</span>
               </Link>
             </Menu.Item>
 
             <Menu.Item key="2">
             <Link to='/lesson2'>
             <Icon type="align-left" />
-              <span>lesson 2</span>
+              <span>知识点 2</span>
               </Link>
             </Menu.Item>
             <Menu.Item key="3">
             <Link to='/lesson3'>
             <Icon type="align-left" />
-              <span>lesson 3</span>
+              <span>知识点 3</span>
               </Link>
             </Menu.Item>
             <Menu.Item key="4">
             <Link to='/lesson4'>
             <Icon type="align-left" />
-              <span>lesson 4</span>
+              <span>知识点 4</span>
               </Link>
             </Menu.Item>
             <Menu.Item key="5">
             <Link to='/lesson5'>
             <Icon type="align-left" />
-              <span>lesson 5</span>
+              <span>知识点 5</span>
               </Link>
             </Menu.Item>
             <Menu.Item key="6">
             <Link to='/lesson6'>
             <Icon type="align-left" />
-              <span>lesson 6</span>
+              <span>知识点 6</span>
               </Link>
             </Menu.Item>
           </Menu>

@@ -25,7 +25,7 @@ export default class Content extends React.Component {
         <Drawer
           title="Practical Deep Learning for Coders"
           placement="right"
-          width='700'
+          width='600'
           mask={false}
           closable={true}
           onClose={this.onClose}

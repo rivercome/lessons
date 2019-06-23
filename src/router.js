@@ -14,7 +14,7 @@ function RouterConfig({ history }) {
     <Router history={history}>
     <Layout>
       <Switch>
-        <Route path="/lesson1" exact component={lesson1} />
+        <Route path="/" exact component={lesson1} />
         <Route path="/lesson2" exact component={lesson2} />
         <Route path="/lesson3" exact component={lesson3} />
         <Route path="/lesson4" exact component={lesson4} />

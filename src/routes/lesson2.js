@@ -16,6 +16,7 @@ export default class Lesson2 extends Component {
         const videoJsOptions = {
             autoplay: false,
             controls: true,
+            width: '900px',
             sources: [{
               src: 'http://www.somefor.cn/C3D%E5%8E%9F%E7%90%86.mp4',
               type: 'video/mp4',
